@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --ink: #7e1a1a;
+  --ink-deep: #5c1414;
+  --parchment: #f6f0dd;
+  --parchment-warm: #efe6cd;
+  --gold: #a8854a;
+  --gold-deep: #8b6b36;
+  --graphite: #2a1a1a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--parchment);
+  color: var(--graphite);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 18px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Cinzel", "Cormorant Garamond", serif;
+  letter-spacing: 0.02em;
+  color: var(--ink-deep);
+}
+
+.eyebrow {
+  font-family: "Cinzel", serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.6rem;
+  font-family: "Cinzel", serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--parchment);
+  border-color: var(--ink);
+}
+.btn-primary:hover {
+  background: var(--ink-deep);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px -10px rgba(92, 20, 20, 0.55);
+}
+
+.btn-gold {
+  background: linear-gradient(180deg, #c9a972 0%, #a8854a 100%);
+  color: var(--ink-deep);
+  border-color: var(--gold-deep);
+}
+.btn-gold:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.btn-ivory {
+  background: var(--parchment);
+  color: var(--ink-deep);
+  border-color: var(--parchment-warm);
+}
+.btn-ivory:hover {
+  background: #fff;
+  transform: translateY(-1px);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--ink-deep);
+  border-color: rgba(126, 26, 26, 0.35);
+}
+.btn-ghost:hover {
+  background: var(--ink);
+  color: var(--parchment);
+  border-color: var(--ink);
+}
+
+.divider-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--gold-deep);
+}
+.divider-ornament::before,
+.divider-ornament::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(168, 133, 74, 0.55), transparent);
+  max-width: 8rem;
+}
+
+.column-card {
+  position: relative;
+  background: linear-gradient(180deg, #ffffff 0%, #faf3e0 100%);
+  border: 1px solid rgba(126, 26, 26, 0.18);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.column-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px -24px rgba(92, 20, 20, 0.35);
+  border-color: rgba(168, 133, 74, 0.55);
+}
+
+/* Marble texture overlay */
+.marble-bg {
+  background-color: var(--parchment);
+  background-image:
+    radial-gradient(at 12% 8%, rgba(168, 133, 74, 0.10), transparent 35%),
+    radial-gradient(at 88% 92%, rgba(126, 26, 26, 0.08), transparent 45%),
+    radial-gradient(at 50% 50%, rgba(255, 255, 255, 0.6), transparent 60%);
+}
+
+/* Roman arch */
+.arch {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+}
+
+/* Seal watermark — used as faint background emblem */
+.seal-watermark {
+  background-image: url("/logo-edictum.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+::selection {
+  background: var(--ink);
+  color: var(--parchment);
+}
