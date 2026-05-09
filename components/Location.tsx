@@ -53,7 +53,7 @@ function VideoPlayer() {
     <div className="relative aspect-[16/10] border border-gold/30 shadow-column overflow-hidden group">
       <video
         ref={videoRef}
-        src="/film-prezentare.mp4"
+        src="https://storage.googleapis.com/shl-okr-platform.firebasestorage.app/edictum/film-prezentare.mp4"
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
