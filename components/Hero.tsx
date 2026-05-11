@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Ornament } from "./Ornament";
 import { IMG } from "@/lib/images";
 import { Seal } from "./Logo";
+import HeroVideo from "./HeroVideo";
 
 export default function Hero() {
   return (
@@ -74,16 +75,7 @@ export default function Hero() {
 
         {/* video */}
         <div className="mt-20 max-w-5xl mx-auto animate-fade-in">
-          <div className="relative aspect-video rounded-sm overflow-hidden shadow-column border border-gold/30 bg-ink">
-            <iframe
-              src="https://www.youtube.com/embed/TZTZ4-3yLN4"
-              title="Educația clasică creștină — transferul unui mod de viață"
-              className="absolute inset-0 w-full h-full"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
-          </div>
+          <HeroVideo />
           <p className="text-center mt-4 text-sm text-ink/55 italic font-serif">
             Ideile au consecințe. Urmărește video-ul pentru a afla despre
             educația ce a construit Occidentul.
