@@ -26,11 +26,11 @@ const items = [
   },
   {
     q: "Când vor începe primele clase?",
-    a: "Cu ajutorul Domnului, în toamna anului 2025.",
+    a: "Cu ajutorul Domnului, în toamna anului 2026.",
   },
   {
     q: "Ce clase veți avea?",
-    a: "Cu ajutorul Domnului, grădiniță, clasa zero (pregătitoare) și clasa întâi. Suntem deschiși la a ne adapta la cererea părinților, deci nu ezitați să vă exprimați interesul chiar dacă copilul dumneavoastră se va afla într-o altă clasă în 2025.",
+    a: "Cu ajutorul Domnului, grădiniță, clasa zero (pregătitoare) și clasa întâi. Suntem deschiși la a ne adapta la cererea părinților, deci nu ezitați să vă exprimați interesul chiar dacă copilul dumneavoastră se va afla într-o altă clasă în 2026.",
   },
   {
     q: "Care este acreditarea școlii?",

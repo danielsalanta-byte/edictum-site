@@ -64,7 +64,7 @@ export default function Despre() {
           Unite. După scurt timp am pus pe hârtie mărturisirea noastră comună
           de credință și misiunea și viziunea școlii. Cu acestea, și cu alte
           câteva kilograme de cărți, am pornit încet dar sigur spre țelul de a
-          realiza cel puțin două clase primare în toamna 2025 în Cluj-Napoca.
+          realiza cel puțin două clase primare în toamna 2026 în Cluj-Napoca.
         </p>
 
         <p className="font-display text-base tracking-[0.2em] uppercase text-gold-deep">

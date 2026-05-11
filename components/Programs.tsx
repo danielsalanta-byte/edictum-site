@@ -32,11 +32,11 @@ export default function Programs() {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="eyebrow mb-4">Programele noastre</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-6">
-            Înscrieri 2025 – 2026
+            Înscrieri 2026 – 2027
           </h2>
           <Ornament className="mb-6" />
           <p className="text-lg font-serif italic text-ink/70">
-            Cu ajutorul Domnului, începem în toamna anului 2025, în Cluj-Napoca.
+            Cu ajutorul Domnului, începem în toamna anului 2026, în Cluj-Napoca.
           </p>
         </div>
 

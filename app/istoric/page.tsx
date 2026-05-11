@@ -63,7 +63,7 @@ export default function Istoric() {
         <p className="text-lg font-serif text-ink/85 leading-relaxed mb-10">
           Cu acestea și cu alte câteva kilograme de cărți, am pornit încet dar
           sigur spre țelul de a realiza cel puțin două clase primare în toamna
-          2025 în Cluj-Napoca. Ne rugăm ca Dumnezeu să își ia toată gloria, iar
+          2026 în Cluj-Napoca. Ne rugăm ca Dumnezeu să își ia toată gloria, iar
           Numele Său să continue să fie lăudat din generație în generație.
         </p>
 
