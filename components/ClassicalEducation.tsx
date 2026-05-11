@@ -1,6 +1,4 @@
-import Image from "next/image";
 import { Ornament } from "./Ornament";
-import { IMG, IMG_ALT } from "@/lib/images";
 
 const principles = [
   {
@@ -48,27 +46,6 @@ const principles = [
 export default function ClassicalEducation() {
   return (
     <section id="educatie-clasica" className="py-24 lg:py-32">
-      {/* editorial banner */}
-      <div className="relative h-[42vh] min-h-[320px] max-h-[520px] overflow-hidden mb-20 lg:mb-28">
-        <Image
-          src={IMG.bookshelves}
-          alt={IMG_ALT.bookshelves}
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-parchment via-transparent to-parchment" />
-        <div className="absolute inset-0 bg-ink/20" />
-        <div className="relative z-10 h-full flex items-center justify-center px-6">
-          <blockquote className="text-center max-w-3xl">
-            <p className="font-serif italic text-2xl md:text-3xl text-parchment leading-snug drop-shadow-[0_2px_8px_rgba(15,27,45,0.55)]">
-              „Marile cărți conțin marile idei ce au modelat istoria și cultura
-              occidentală.”
-            </p>
-          </blockquote>
-        </div>
-      </div>
-
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="eyebrow mb-4">Fundamentele formării</p>
