@@ -62,10 +62,14 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
     }, 3000);
   }, []);
 
-  function togglePlay() {
+  async function togglePlay() {
     const v = videoRef.current;
     if (!v) return;
-    v.paused ? v.play() : v.pause();
+    if (v.paused) {
+      try { await v.play(); } catch (_) { /* autoplay blocked */ }
+    } else {
+      v.pause();
+    }
     resetHideTimer();
   }
 
@@ -107,6 +111,7 @@ export default function VideoPlayer({ src, className = "" }: VideoPlayerProps) {
         src={src}
         loop
         playsInline
+        preload="metadata"
         className="absolute inset-0 w-full h-full object-cover"
         onClick={togglePlay}
       />
