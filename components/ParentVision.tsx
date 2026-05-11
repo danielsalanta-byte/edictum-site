@@ -1,6 +1,8 @@
-import Image from "next/image";
-import { IMG, IMG_ALT } from "@/lib/images";
 import { Ornament } from "./Ornament";
+import VideoPlayer from "./VideoPlayer";
+
+const PARENT_VIDEO =
+  "https://storage.googleapis.com/shl-okr-platform.firebasestorage.app/edictum/marturii-parinti.mp4";
 
 export default function ParentVision() {
   return (
@@ -43,13 +45,10 @@ export default function ParentVision() {
         </div>
 
         <div className="relative">
-          <div className="relative aspect-[5/6] overflow-hidden border border-gold/30 shadow-column">
-            <Image
-              src={IMG.fatherChild}
-              alt={IMG_ALT.fatherChild}
-              fill
-              sizes="(min-width: 1024px) 50vw, 100vw"
-              className="object-cover"
+          <div className="relative aspect-[5/6] border border-gold/30 shadow-column overflow-hidden">
+            <VideoPlayer
+              src={PARENT_VIDEO}
+              className="absolute inset-0 w-full h-full"
             />
           </div>
           <div className="absolute -top-4 -right-4 w-20 h-20 border-r-2 border-t-2 border-gold-deep hidden lg:block" />
