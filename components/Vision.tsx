@@ -38,11 +38,57 @@ export default function Vision() {
               formarea unei vieți întregi: minte disciplinată, inimă ordonată,
               caracter virtuos și imaginație morală.
             </p>
-            <p className="mt-5 text-lg md:text-xl font-serif text-ink/80 leading-relaxed">
-              Prin moștenirea educației clasice creștine, dorim să oferim
-              copiilor rădăcini adânci în Scriptură, cultură, literatură,
-              istorie, logică, retorică și frumusețea lumii create de Dumnezeu.
-            </p>
+
+            <div className="mt-8 pt-8 border-t border-gold/20 space-y-5">
+              {/* Trivium */}
+              <div>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="font-display text-[0.58rem] tracking-[0.32em] uppercase text-gold-deep">Trivium</span>
+                  <div className="flex-1 h-px bg-gold/20" />
+                </div>
+                <p className="font-serif text-[0.82rem] text-ink/58 italic leading-relaxed mb-3">
+                  Artele lingvistice ale minții — cuvântul ca instrument al gândirii clare.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    { name: "Gramatică", sub: "a ști" },
+                    { name: "Logică", sub: "a judeca" },
+                    { name: "Retorică", sub: "a exprima" },
+                  ].map((d) => (
+                    <div key={d.name} className="flex items-center gap-2 px-3 py-2 border border-gold/30 bg-gold/5">
+                      <span className="text-gold/50 text-[7px]">✦</span>
+                      <span className="font-display text-[0.6rem] tracking-[0.2em] uppercase text-ink-deep">{d.name}</span>
+                      <span className="font-serif text-[0.68rem] italic text-ink/40">{d.sub}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Quadrivium */}
+              <div>
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="font-display text-[0.58rem] tracking-[0.32em] uppercase text-gold-deep">Quadrivium</span>
+                  <div className="flex-1 h-px bg-gold/20" />
+                </div>
+                <p className="font-serif text-[0.82rem] text-ink/58 italic leading-relaxed mb-3">
+                  Artele matematice ale realității — ordinea lumii create de Dumnezeu.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    { name: "Aritmetică", sub: "numărul" },
+                    { name: "Geometrie", sub: "spațiul" },
+                    { name: "Muzică", sub: "proporția" },
+                    { name: "Astronomie", sub: "fizică & științele naturii" },
+                  ].map((d) => (
+                    <div key={d.name} className="flex items-center gap-2 px-3 py-2 border border-gold/30 bg-gold/5">
+                      <span className="text-gold/50 text-[7px]">✦</span>
+                      <span className="font-display text-[0.6rem] tracking-[0.2em] uppercase text-ink-deep">{d.name}</span>
+                      <span className="font-serif text-[0.68rem] italic text-ink/40">{d.sub}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="order-1 lg:order-2 relative">

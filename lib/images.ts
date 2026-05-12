@@ -40,6 +40,7 @@ export const IMG = {
 
   // Local photos (saved in /public)
   classroomEdictum: "/classroom.png",
+  classroomEdictum2: "/classroom2.jpg",
 };
 
 export const IMG_ALT = {
@@ -64,4 +65,5 @@ export const IMG_ALT = {
   childrenUniform: "Copii în uniforme școlare albe într-o sală de clasă",
   sfMihailCluj: "Biserica Sfântul Mihail din Cluj-Napoca cu statuia ecvestră a lui Matei Corvin",
   classroomEdictum: "Sală de clasă a unei școli clasice creștine — elevi în uniforme verzi, profesor la tablă albă",
+  classroomEdictum2: "Sală de clasă a unei școli clasice creștine — elevi în uniforme, activitate de învățare",
 };

@@ -5,8 +5,8 @@ import { useState } from "react";
 import Logo from "./Logo";
 
 const navLinks = [
-  { href: "/viziune", label: "Viziune" },
-  { href: "/#educatie-clasica", label: "Educație Clasică" },
+  { href: "/educatie-clasica", label: "Educație Clasică" },
+  { href: "/educatie-clasica/memoria-press", label: "Memoria Press" },
   { href: "/#programe", label: "Programe" },
   { href: "/despre", label: "Despre Noi" },
   { href: "/#faq", label: "Întrebări" },

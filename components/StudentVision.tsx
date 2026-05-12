@@ -2,6 +2,54 @@ import Image from "next/image";
 import { IMG } from "@/lib/images";
 import { Ornament } from "./Ornament";
 
+const verticals = [
+  {
+    label: "Familia",
+    desc: "Tineri care întemeiază familii devreme și cu responsabilitate, transmiţând moștenirea credinței din generație în generație.",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
+      </svg>
+    ),
+  },
+  {
+    label: "Munca",
+    desc: "Urmărind excelența și credincioșia în orice chemare, lucrând ca înaintea lui Dumnezeu, nu doar a oamenilor.",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+        <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+        <line x1="12" y1="12" x2="12" y2="17" />
+        <line x1="9.5" y1="14.5" x2="14.5" y2="14.5" />
+      </svg>
+    ),
+  },
+  {
+    label: "Biserica",
+    desc: "Slujind cu devotament în trupul lui Hristos, edificând comunitatea credincioșilor și hrănindu-se din Cuvânt și sacramente.",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="12" y1="2" x2="12" y2="7" />
+        <line x1="9.5" y1="4.5" x2="14.5" y2="4.5" />
+        <path d="M5 10h14l1 11H4L5 10z" />
+        <path d="M9 21v-6a3 3 0 0 1 6 0v6" />
+      </svg>
+    ),
+  },
+  {
+    label: "Societatea",
+    desc: "Implicați activ în extinderea hotarelor Împărăției lui Dumnezeu, spre binele aproapelui și spre slava lui Dumnezeu.",
+    icon: (
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10" />
+        <line x1="2" y1="12" x2="22" y2="12" />
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+      </svg>
+    ),
+  },
+];
+
 export default function StudentVision() {
   return (
     <section className="relative py-24 lg:py-32 bg-ink-deep text-parchment overflow-hidden">
@@ -19,66 +67,85 @@ export default function StudentVision() {
       </div>
 
       <div className="relative max-w-4xl mx-auto px-6 lg:px-10">
+        {/* Header */}
         <div className="text-center mb-12">
-          <p className="eyebrow !text-gold-light mb-4">Student Vision</p>
+          <p className="eyebrow !text-gold-light mb-4">Viziunea noastră despre absolvent</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-parchment mb-6 leading-tight">
-            Tinerii pe care dorim să-i formăm
+            Tinerii pe care dorim<br />să-i formăm
           </h2>
           <Ornament className="mb-2 [&>svg]:text-gold-light" />
         </div>
 
-        <div className="space-y-6 font-serif text-lg md:text-xl text-parchment/90 leading-relaxed">
+        {/* Body paragraphs */}
+        <div className="space-y-6 font-serif text-lg md:text-xl text-parchment/88 leading-relaxed">
           <p>
-            Ne dorim să dăm absolvenți — bărbați și femei tineri — care
-            <strong className="text-parchment"> gândesc limpede</strong> și
-            ascultă cu atenție, cu discernământ și înțelegere; care raționează
-            convingător și se exprimă cu precizie; care sunt capabili să
-            evalueze întreaga lor experiență
-            <strong className="text-parchment"> în lumina Scripturii</strong>,
-            și fac aceasta cu zel, în supunere bucuroasă față de Dumnezeu.
+            Ne dorim să formăm absolvenți — tineri bărbați și femei — care{" "}
+            <strong className="text-parchment">gândesc limpede</strong>, ascultă
+            cu atenție și privesc lumea cu discernământ și înțelegere. Tineri
+            capabili să raționeze cu claritate, să vorbească cu precizie și să
+            își așeze întreaga viață sub{" "}
+            <strong className="text-parchment">autoritatea Scripturii</strong>,
+            slujindu-L pe Dumnezeu cu bucurie, zel și credincioșie.
           </p>
           <p>
-            Dorim ca ei să recunoască influențele culturale ca distincte de
-            cele biblice, și să nu fie atrași spre rău de cele dintâi. Vrem
-            să-i găsim
-            <strong className="text-parchment"> bine pregătiți în orice situație</strong>,
-            posedând atât informația, cât și înțelepciunea de a o folosi.
+            Dorim ca ei să poată deosebi influențele culturii de adevărul biblic,
+            fără a fi purtați de curentele vremii sau modelați de spiritul acestei
+            lumi. Vrem să fie oameni{" "}
+            <strong className="text-parchment">bine pregătiți pentru orice chemare</strong>{" "}
+            și orice responsabilitate, având nu doar cunoștință, ci și
+            înțelepciunea de a folosi drept ceea ce au învățat.
           </p>
           <p>
-            Dorim ca elevii Edictum să fie
-            <strong className="text-parchment"> grațioși în societate și plini de har spiritual</strong>;
-            echipați cu uneltele învățării și înțelegându-le; dorind să crească
-            în înțelegere, dar conștienți de limitele și nebunia înțelepciunii
-            acestei lumi.
+            Ne dorim ca elevii Edictum să fie{" "}
+            <strong className="text-parchment">oameni cultivați și plini de har</strong>{" "}
+            — echipați cu instrumentele învățării, iubitori de adevăr și dornici
+            să crească în înțelegere, dar totodată conștienți de limitele și
+            deșertăciunea înțelepciunii desprinse de Dumnezeu.
           </p>
           <p>
-            Vrem să aibă o
-            <strong className="text-parchment"> inimă pentru cei pierduți</strong>
-            și
-            <strong className="text-parchment"> curajul de a-i întoarce</strong>
-            pe cei ce se poticnesc spre pierzare; să deosebească religia
-            adevărată de cea doar în formă, și să o posede pe cea dintâi —
-            cunoscându-L și iubindu-L pe Domnul Isus Hristos.
-          </p>
-          <p className="font-display italic text-parchment/85 text-base md:text-lg pt-2 border-t border-parchment/20 mt-8">
-            Și pe toate acestea le dorim însoțite de smerenie și recunoștință
-            față de Dumnezeu.
+            Dorim să crească având o{" "}
+            <strong className="text-parchment">inimă pentru cei pierduți</strong>{" "}
+            și curajul de a-i ridica pe cei care se îndreaptă spre pierzare; să
+            poată deosebi credința autentică de religia formală și să-L cunoască,
+            să-L iubească și să-L urmeze pe{" "}
+            <strong className="text-parchment">Domnul Isus Hristos</strong> cu
+            sinceritate și statornicie.
           </p>
         </div>
 
-        <div className="mt-14 grid sm:grid-cols-3 gap-6 text-left">
-          {[
-            { t: "Înțelept", d: "Cunoaște adevărul și judecă cu minte limpede, în lumina Scripturii." },
-            { t: "Curajos", d: "Trăiește virtuos, slujind cu noblețe morală și inimă pentru cei pierduți." },
-            { t: "Articulat", d: "Vorbește frumos, scrie convingător, ascultă cu discernământ." },
-          ].map((v) => (
-            <div key={v.t} className="border-l-2 border-gold pl-5 py-2">
-              <h3 className="font-display tracking-[0.2em] uppercase text-sm text-gold-light mb-2">
-                {v.t}
-              </h3>
-              <p className="text-parchment/80 font-serif">{v.d}</p>
-            </div>
-          ))}
+        {/* Closing line */}
+        <p className="mt-10 pt-8 border-t border-parchment/15 font-serif italic text-parchment/70 text-base md:text-lg leading-relaxed text-center">
+          Și dorim ca toate acestea să fie însoțite de smerenie, recunoștință și
+          o dependență sinceră de harul lui Dumnezeu, înțelegând că orice
+          adevărată înțelepciune, virtute și rod bun vin de la El.
+        </p>
+
+        {/* Four verticals */}
+        <div className="mt-16">
+          <div className="text-center mb-10">
+            <p className="eyebrow !text-gold-light mb-2">Cele patru mari verticale ale vieții</p>
+            <div className="w-12 h-px mx-auto" style={{ background: "rgba(168,133,74,0.4)" }} />
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {verticals.map((v) => (
+              <div
+                key={v.label}
+                className="border border-gold/22 bg-ink-deep/60 backdrop-blur-sm p-6 hover:border-gold/45 transition-colors duration-300 group"
+              >
+                <div className="text-gold mb-4 group-hover:text-gold-light transition-colors">
+                  {v.icon}
+                </div>
+                <h3 className="font-display text-[0.72rem] tracking-[0.28em] uppercase text-gold mb-3">
+                  {v.label}
+                </h3>
+                <div className="w-6 h-px mb-3" style={{ background: "rgba(168,133,74,0.35)" }} />
+                <p className="font-serif text-sm text-parchment/68 leading-relaxed">
+                  {v.desc}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
