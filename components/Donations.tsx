@@ -1,35 +1,10 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
 import { Ornament } from "./Ornament";
 import { IMG } from "@/lib/images";
 
-const presets = [50, 100, 250, 500];
+const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/test_9B66oI7MN4dC6gr1cO0Fi00";
 
 export default function Donations() {
-  const [amount, setAmount] = useState<number>(100);
-  const [custom, setCustom] = useState<string>("");
-  const [recurring, setRecurring] = useState<boolean>(false);
-  const [method, setMethod] = useState<"card" | "applepay" | "googlepay" | "transfer">("card");
-  const [done, setDone] = useState<boolean>(false);
-  const [email, setEmail] = useState<string>("");
-
-  const finalAmount = custom ? Number(custom) : amount;
-
-  function submit(e: React.FormEvent) {
-    e.preventDefault();
-    // PLACEHOLDER: Integrare reală cu Stripe / Netopia / EuPlătesc / PlatiOnline
-    // ============================================================
-    // 1. Trimite { amount: finalAmount, currency: 'RON', method, recurring, email }
-    //    către endpoint-ul backend care creează un PaymentIntent / sesiune de plată.
-    // 2. Pentru Apple Pay / Google Pay, folosește Stripe PaymentRequest API
-    //    sau echivalentul oferit de procesatorul ales.
-    // 3. La succes — confirmă plata și trimite email de mulțumire automat.
-    // ============================================================
-    setDone(true);
-  }
-
   return (
     <section id="donatii" className="py-14 lg:py-32 bg-ink text-parchment relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
@@ -46,6 +21,7 @@ export default function Donations() {
       </div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-2 gap-10 lg:gap-14">
+        {/* Left: description + bank transfer */}
         <div>
           <p className="eyebrow text-gold-light mb-4">Susține Edictum</p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6 text-parchment">
@@ -73,121 +49,38 @@ export default function Donations() {
           </div>
         </div>
 
-        {done ? (
-          <div className="bg-parchment text-ink p-6 sm:p-10 lg:p-12 border border-gold-deep flex flex-col justify-center text-center">
-            <div className="text-gold-deep mb-4">
-              <svg width="48" height="48" viewBox="0 0 48 48" className="mx-auto" fill="none">
-                <circle cx="24" cy="24" r="22" stroke="currentColor" strokeWidth="1.5" />
-                <path d="M14 24 L22 32 L36 16" stroke="currentColor" strokeWidth="2" />
-              </svg>
-            </div>
-            <h3 className="font-display text-2xl mb-3">Mulțumim din inimă!</h3>
-            <p className="font-serif text-ink/80 mb-2">
-              Donația ta de <strong>{finalAmount} RON</strong>
-              {recurring && " (lunară)"} a fost înregistrată.
-            </p>
-            <p className="font-serif text-ink/70 text-sm">
-              Un email de confirmare va fi trimis la <strong>{email || "adresa ta"}</strong>.
-              <br />Soli Deo Gloria.
-            </p>
-            <button
-              onClick={() => { setDone(false); setCustom(""); setEmail(""); }}
-              className="btn btn-ghost mt-6 self-center"
-            >
-              Donează din nou
-            </button>
+        {/* Right: Stripe donation card */}
+        <div className="bg-parchment text-ink p-6 sm:p-10 lg:p-12 border border-gold-deep shadow-column flex flex-col justify-center">
+          <h3 className="font-display text-2xl sm:text-3xl mb-3">Donație online</h3>
+          <p className="font-serif text-ink/70 leading-relaxed mb-8">
+            Plătește securizat cu card bancar, Apple Pay sau Google Pay.
+            Vei alege suma direct pe pagina de plată.
+          </p>
+
+          <div className="flex flex-wrap gap-3 mb-8">
+            {["Card bancar", "Apple Pay", "Google Pay"].map((m) => (
+              <span
+                key={m}
+                className="inline-flex items-center gap-2 border border-ink/20 px-4 py-2 font-display text-xs tracking-[0.16em] uppercase text-ink/70"
+              >
+                {m}
+              </span>
+            ))}
           </div>
-        ) : (
-          <form
-            onSubmit={submit}
-            className="bg-parchment text-ink p-5 sm:p-8 lg:p-10 border border-gold-deep shadow-column"
+
+          <a
+            href={STRIPE_PAYMENT_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-gold w-full text-center mb-4"
           >
-            <h3 className="font-display text-2xl mb-6">Donație rapidă</h3>
+            Donează acum
+          </a>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-              {presets.map((p) => (
-                <button
-                  type="button"
-                  key={p}
-                  onClick={() => { setAmount(p); setCustom(""); }}
-                  className={`py-3 font-display text-sm tracking-wider border transition ${
-                    !custom && amount === p
-                      ? "bg-ink text-parchment border-ink"
-                      : "border-ink/30 hover:border-ink"
-                  }`}
-                >
-                  {p} RON
-                </button>
-              ))}
-            </div>
-
-            <input
-              type="number"
-              min="1"
-              placeholder="Sumă personalizată (RON)"
-              value={custom}
-              onChange={(e) => setCustom(e.target.value)}
-              className="w-full px-4 py-3 border border-ink/25 bg-transparent font-serif mb-5 focus:outline-none focus:border-gold-deep"
-            />
-
-            <label className="flex items-center gap-3 mb-6 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={recurring}
-                onChange={(e) => setRecurring(e.target.checked)}
-                className="w-4 h-4 accent-gold-deep"
-              />
-              <span className="font-serif text-ink/85">Donație recurentă lunară</span>
-            </label>
-
-            <div className="mb-5">
-              <label className="block eyebrow mb-2 !text-xs">Email pentru confirmare</label>
-              <input
-                type="email"
-                required
-                placeholder="email@exemplu.ro"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="w-full px-4 py-3 border border-ink/25 bg-transparent font-serif focus:outline-none focus:border-gold-deep"
-              />
-            </div>
-
-            <div className="mb-6">
-              <p className="eyebrow mb-3 !text-xs">Metodă de plată</p>
-              <div className="grid grid-cols-2 gap-2">
-                {([
-                  { id: "card", label: "Card bancar" },
-                  { id: "applepay", label: "Apple Pay" },
-                  { id: "googlepay", label: "Google Pay" },
-                  { id: "transfer", label: "Transfer bancar" },
-                ] as const).map((m) => (
-                  <button
-                    type="button"
-                    key={m.id}
-                    onClick={() => setMethod(m.id)}
-                    className={`py-3 px-4 font-display text-xs tracking-[0.18em] uppercase border transition ${
-                      method === m.id
-                        ? "bg-ink text-parchment border-ink"
-                        : "border-ink/25 hover:border-ink"
-                    }`}
-                  >
-                    {m.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            <button type="submit" className="btn btn-gold w-full" disabled={!finalAmount}>
-              Donează {finalAmount > 0 ? `${finalAmount} RON` : ""}
-              {recurring && finalAmount > 0 ? " · lunar" : ""}
-            </button>
-
-            <p className="mt-4 text-xs text-ink/55 font-serif italic text-center">
-              Plățile sunt procesate securizat. Integrare cu Stripe / Netopia /
-              EuPlătesc disponibilă la activarea cheilor API.
-            </p>
-          </form>
-        )}
+          <p className="text-xs text-ink/45 font-serif italic text-center">
+            Plăți procesate securizat prin Stripe · SSL encrypted
+          </p>
+        </div>
       </div>
     </section>
   );
