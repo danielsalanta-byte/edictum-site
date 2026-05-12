@@ -9,7 +9,7 @@ const navLinks = [
   { href: "/educatie-clasica", label: "Educație Clasică" },
   { href: "/educatie-clasica/memoria-press", label: "Memoria Press" },
   { href: "/#faq", label: "Întrebări" },
-  { href: "/#donatii", label: "Donații" },
+  { href: "/#donatii", label: "Susține" },
 ];
 
 export default function Header() {
