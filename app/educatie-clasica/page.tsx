@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Ornament } from "@/components/Ornament";
 import { IMG, IMG_ALT } from "@/lib/images";
 import ViziuneStats from "@/components/ViziuneStats";
+import ClassicalEducation from "@/components/ClassicalEducation";
 
 export const metadata: Metadata = {
   title: "Rezultatele Educației Clasice Creștine · Educație Clasică · Edictum",
@@ -38,8 +39,8 @@ export default function EducatieClasicaPage() {
           className="object-cover object-center"
         />
         {/* layered overlays */}
-        <div className="absolute inset-0 bg-ink-deep/72" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-ink-deep/25 to-ink-deep/92" />
+        <div className="absolute inset-0 bg-ink-deep/88" />
+        <div className="absolute inset-0 bg-gradient-to-b from-ink-deep/60 via-ink-deep/50 to-ink-deep/97" />
         {/* faint seal watermark */}
         <div className="absolute inset-0 opacity-[0.04] seal-watermark" />
 
@@ -58,17 +59,17 @@ export default function EducatieClasicaPage() {
           <Ornament className="mb-10 [&>svg]:text-gold-light" />
 
           <div className="max-w-3xl mx-auto space-y-5 mb-16">
-            <p className="text-xl font-serif italic text-parchment/90 leading-relaxed">
+            <p className="text-xl font-serif font-semibold italic text-white leading-relaxed">
               Educația nu este neutră. Fiecare școală formează o anumită viziune
               despre lume, despre om, despre adevăr și despre sensul vieții.
             </p>
-            <p className="text-lg font-serif text-parchment/78 leading-relaxed">
+            <p className="text-lg font-serif font-semibold text-white leading-relaxed">
               Educația clasică creștină urmărește mai mult decât performanță
               academică. Ea formează caracter, disciplină, discernământ, iubire
               pentru adevăr și responsabilitate înaintea lui Dumnezeu și a
               societății.
             </p>
-            <p className="text-base font-serif text-parchment/65 leading-relaxed">
+            <p className="text-base font-serif font-medium text-white leading-relaxed">
               Unul dintre cele mai ample studii realizate în Statele Unite — pe
               aproximativ 2.500 de absolvenți cu vârste între 25 și 44 de ani —
               evidențiază diferențe semnificative între educația clasică creștină
@@ -94,6 +95,8 @@ export default function EducatieClasicaPage() {
         {/* bottom fade into next section */}
         <div className="relative h-20 bg-gradient-to-t from-parchment to-transparent" />
       </section>
+
+      <ClassicalEducation />
 
       {/* ════════════════════════════════════════════════════════════
           SECȚIUNEA 1 — Excelență academică

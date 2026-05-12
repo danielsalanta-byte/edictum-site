@@ -23,20 +23,20 @@ export default function MemoriaPressPage() {
       {/* ════════════════════════════════════════════════════════════
           HERO — cinematic dark
       ════════════════════════════════════════════════════════════ */}
-      <section className="relative min-h-[96vh] flex flex-col justify-end overflow-hidden">
+      <section className="relative min-h-screen flex flex-col justify-end overflow-hidden">
         <Image
-          src={IMG.oldLibrary}
-          alt={IMG_ALT.oldLibrary}
+          src="/memoria-hero.png"
+          alt="Echipa Memoria Press în discuție academică, cărți și tablouri clasice în fundal"
           fill
           priority
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-ink-deep/78" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-ink-deep/30 to-ink-deep/95" />
+        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/15 to-black/60" />
         <div className="absolute inset-0 opacity-[0.04] seal-watermark" />
 
-        <div className="relative z-10 max-w-5xl mx-auto w-full px-6 lg:px-10 pb-0 pt-40 text-center">
+        <div className="relative z-10 max-w-5xl mx-auto w-full px-6 lg:px-10 pb-16 pt-40 text-center">
           {/* eyebrow */}
           <p className="eyebrow !text-gold-light mb-5 tracking-[0.35em]">
             Curriculum Clasic Creștin
@@ -83,7 +83,6 @@ export default function MemoriaPressPage() {
           </div>
         </div>
 
-        <div className="relative h-20 bg-gradient-to-t from-parchment to-transparent" />
       </section>
 
       {/* ════════════════════════════════════════════════════════════
@@ -246,9 +245,9 @@ export default function MemoriaPressPage() {
           <div className="text-center max-w-3xl mx-auto mb-20">
             <p className="eyebrow !text-gold-light mb-4">Formarea profesorilor</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-parchment mb-6 leading-tight">
-              Teacher Formation
+              Formarea Profesorilor
               <br />
-              <span className="text-gold-light">& Christian Character</span>
+              <span className="text-gold-light">& Caracterul Creștin</span>
             </h2>
             <Ornament className="mb-6 [&>svg]:text-gold-light" />
             <p className="text-lg font-serif italic text-parchment/78 leading-relaxed">
@@ -394,23 +393,68 @@ export default function MemoriaPressPage() {
               </ul>
             </FadeIn>
 
-            {/* image collage */}
+            {/* Memoria Press brand panel */}
             <FadeIn delay={200}>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="relative aspect-[3/4] overflow-hidden border border-gold/20">
-                  <Image src={IMG.fatherChild} alt={IMG_ALT.fatherChild} fill sizes="25vw" className="object-cover" />
-                </div>
-                <div className="relative aspect-[3/4] overflow-hidden border border-gold/20 mt-8">
-                  <Image src={IMG.openBook} alt={IMG_ALT.openBook} fill sizes="25vw" className="object-cover" />
-                </div>
-                <div className="col-span-2 relative aspect-[16/7] overflow-hidden border border-gold/20">
-                  <Image src={IMG.cambridgeFacade} alt={IMG_ALT.cambridgeFacade} fill sizes="50vw" className="object-cover" />
-                  <div className="absolute inset-0 bg-ink-deep/40" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <p className="font-display text-parchment text-center text-sm tracking-[0.2em] uppercase px-4">
-                      Clasici Creștini · Moștenire · Civilizație
-                    </p>
+              <div className="flex flex-col gap-5 h-full">
+                {/* Main brand block */}
+                <div className="flex-1 bg-ink-deep border border-gold/30 flex flex-col items-center justify-center py-16 px-10 relative overflow-hidden">
+                  {/* subtle background texture */}
+                  <div className="absolute inset-0 opacity-[0.03]" style={{
+                    backgroundImage: "repeating-linear-gradient(45deg, #F6F0DD 0, #F6F0DD 1px, transparent 0, transparent 50%)",
+                    backgroundSize: "12px 12px"
+                  }} />
+                  {/* corner ornaments */}
+                  <div className="absolute top-4 left-4 w-10 h-10 border-l border-t border-gold/40" />
+                  <div className="absolute top-4 right-4 w-10 h-10 border-r border-t border-gold/40" />
+                  <div className="absolute bottom-4 left-4 w-10 h-10 border-l border-b border-gold/40" />
+                  <div className="absolute bottom-4 right-4 w-10 h-10 border-r border-b border-gold/40" />
+
+                  {/* Torch SVG icon */}
+                  <svg width="52" height="52" viewBox="0 0 52 52" fill="none" className="mb-6 opacity-90">
+                    <path d="M26 4 C20 8 16 14 17 20 C18 26 22 28 22 34 L30 34 C30 28 34 26 35 20 C36 14 32 8 26 4Z" fill="rgba(168,133,74,0.25)" stroke="rgba(168,133,74,0.8)" strokeWidth="1.2"/>
+                    <path d="M26 4 C23 9 21 13 22 18 C23 23 26 25 26 25 C26 25 29 23 30 18 C31 13 29 9 26 4Z" fill="rgba(168,133,74,0.45)"/>
+                    <line x1="22" y1="34" x2="20" y2="48" stroke="rgba(168,133,74,0.7)" strokeWidth="1.5" strokeLinecap="round"/>
+                    <line x1="30" y1="34" x2="32" y2="48" stroke="rgba(168,133,74,0.7)" strokeWidth="1.5" strokeLinecap="round"/>
+                    <line x1="20" y1="48" x2="32" y2="48" stroke="rgba(168,133,74,0.7)" strokeWidth="1.5" strokeLinecap="round"/>
+                    <line x1="21" y1="40" x2="31" y2="40" stroke="rgba(168,133,74,0.4)" strokeWidth="1"/>
+                  </svg>
+
+                  {/* Brand name */}
+                  <p className="font-display text-[0.6rem] tracking-[0.45em] uppercase text-gold mb-3 relative z-10">
+                    Est. 1952 · Louisville, Kentucky
+                  </p>
+                  <div className="relative z-10 text-center">
+                    <div className="font-display text-4xl md:text-5xl text-parchment leading-none tracking-wide mb-1">
+                      Memoria
+                    </div>
+                    <div className="font-display text-4xl md:text-5xl text-gold leading-none tracking-wide">
+                      Press
+                    </div>
                   </div>
+
+                  <div className="w-16 h-px bg-gold/50 my-6 relative z-10" />
+
+                  <p className="font-serif italic text-parchment/65 text-sm text-center leading-relaxed max-w-xs relative z-10">
+                    Classical Christian Curriculum
+                    <br />
+                    <span className="text-gold/70 not-italic font-display text-[0.6rem] tracking-[0.3em] uppercase">
+                      Clasici · Caracter · Hristos
+                    </span>
+                  </p>
+                </div>
+
+                {/* Bottom detail strip */}
+                <div className="bg-ink-deep/8 border border-gold/20 px-8 py-6 flex items-center justify-between gap-4">
+                  {[
+                    { num: "70+", label: "ani de curriculum" },
+                    { num: "K–12", label: "grade complete" },
+                    { num: "1000+", label: "titluri publicate" },
+                  ].map((s) => (
+                    <div key={s.label} className="text-center flex-1">
+                      <div className="font-display text-xl text-gold-deep leading-none mb-1">{s.num}</div>
+                      <div className="font-sans text-[0.6rem] tracking-widest uppercase text-ink/50 leading-relaxed">{s.label}</div>
+                    </div>
+                  ))}
                 </div>
               </div>
             </FadeIn>
@@ -613,13 +657,13 @@ export default function MemoriaPressPage() {
       ════════════════════════════════════════════════════════════ */}
       <section className="relative py-32 lg:py-44 overflow-hidden">
         <Image
-          src={IMG.oxfordCourt}
-          alt={IMG_ALT.oxfordCourt}
+          src={IMG.clujPanorama}
+          alt={IMG_ALT.clujPanorama}
           fill
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-ink-deep/82" />
+        <div className="absolute inset-0 bg-ink-deep/75" />
         <div className="absolute inset-0 opacity-[0.05] seal-watermark" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 lg:px-10 text-center">

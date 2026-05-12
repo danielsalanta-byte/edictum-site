@@ -16,6 +16,7 @@ export const IMG = {
 
   // Libraries & books
   oldLibrary: u("photo-1481627834876-b7833e8f5570"),         // Trinity-style library
+  darkLibrary: u("photo-1519682337058-a94d519337bc"),        // dark dramatic spiral-staircase library
   bookshelves: u("photo-1521587760476-6c12a4b040da"),        // long shelf perspective
   openBook: u("photo-1507842217343-583bb7270b66"),           // open book on wood, warm light
   manuscriptDesk: u("photo-1532153975070-2e9ab71f1b14"),     // antique manuscripts
@@ -41,6 +42,7 @@ export const IMG = {
   // Local photos (saved in /public)
   classroomEdictum: "/classroom.png",
   classroomEdictum2: "/classroom2.jpg",
+  clujPanorama: "/cluj-panorama.jpg",
 };
 
 export const IMG_ALT = {
@@ -66,4 +68,5 @@ export const IMG_ALT = {
   sfMihailCluj: "Biserica Sfântul Mihail din Cluj-Napoca cu statuia ecvestră a lui Matei Corvin",
   classroomEdictum: "Sală de clasă a unei școli clasice creștine — elevi în uniforme verzi, profesor la tablă albă",
   classroomEdictum2: "Sală de clasă a unei școli clasice creștine — elevi în uniforme, activitate de învățare",
+  clujPanorama: "Panoramă Cluj-Napoca — case colorate sub cer senin și luminos",
 };

@@ -169,20 +169,16 @@ function CircularStat({
 // ─── Integration wheel: Faith & Science section ───────────────────────────────
 
 const wheelSubjects = [
-  { label: "Teologie", abbr: "TEOL", angle: 0 },
-  { label: "Filosofie", abbr: "FILOS", angle: 60 },
-  { label: "Știință", abbr: "ȘTIINȚĂ", angle: 120 },
-  { label: "Matematică", abbr: "MAT", angle: 180 },
-  { label: "Literatură", abbr: "LIT", angle: 240 },
-  { label: "Istorie", abbr: "IST", angle: 300 },
+  { label: "Teologie",   angle: 0 },
+  { label: "Filosofie",  angle: 60 },
+  { label: "Știință",    angle: 120 },
+  { label: "Matematică", angle: 180 },
+  { label: "Literatură", angle: 240 },
+  { label: "Istorie",    angle: 300 },
 ];
 
 function IntegrationWheel({ inView }: { inView: boolean }) {
-  const cx = 220,
-    cy = 220,
-    r = 118,
-    ri = 52,
-    rLabel = 165;
+  const cx = 220, cy = 220, r = 128, ri = 58, nodeR = 40;
 
   return (
     <div
@@ -194,26 +190,26 @@ function IntegrationWheel({ inView }: { inView: boolean }) {
     >
       <svg
         viewBox="0 0 440 440"
-        className="w-full max-w-[360px] mx-auto"
+        className="w-full max-w-[400px] mx-auto"
         aria-label="Roată de integrare a cunoașterii clasice creștine"
       >
-        {/* outer decorative ring */}
+        {/* outer decorative ring — outside the node circles */}
         <circle
           cx={cx}
           cy={cy}
-          r={r + 18}
+          r={r + nodeR + 14}
           fill="none"
           stroke="rgba(168,133,74,0.15)"
           strokeWidth="1"
           strokeDasharray="4 6"
         />
-        {/* main circle */}
+        {/* main orbit circle */}
         <circle
           cx={cx}
           cy={cy}
           r={r}
           fill="none"
-          stroke="rgba(168,133,74,0.35)"
+          stroke="rgba(168,133,74,0.28)"
           strokeWidth="1"
         />
         {/* center fill */}
@@ -221,49 +217,40 @@ function IntegrationWheel({ inView }: { inView: boolean }) {
           cx={cx}
           cy={cy}
           r={ri}
-          fill="rgba(92,20,20,0.18)"
+          fill="rgba(92,20,20,0.20)"
           stroke="rgba(168,133,74,0.55)"
           strokeWidth="1.5"
         />
 
         {wheelSubjects.map((s) => {
           const rad = ((s.angle - 90) * Math.PI) / 180;
-          const xOuter = cx + r * Math.cos(rad);
-          const yOuter = cy + r * Math.sin(rad);
+          const xNode = cx + r * Math.cos(rad);
+          const yNode = cy + r * Math.sin(rad);
           const xInner = cx + ri * Math.cos(rad);
           const yInner = cy + ri * Math.sin(rad);
-          const xLabel = cx + rLabel * Math.cos(rad);
-          const yLabel = cy + rLabel * Math.sin(rad);
+          // shorten spoke so it ends at node circle edge
+          const xSpoke = xNode - nodeR * Math.cos(rad);
+          const ySpoke = yNode - nodeR * Math.sin(rad);
 
           return (
             <g key={s.label}>
               <line
                 x1={xInner}
                 y1={yInner}
-                x2={xOuter}
-                y2={yOuter}
+                x2={xSpoke}
+                y2={ySpoke}
                 stroke="rgba(168,133,74,0.4)"
                 strokeWidth="1"
               />
-              <circle cx={xOuter} cy={yOuter} r="24" fill="rgba(92,20,20,0.88)" />
+              {/* node circle */}
+              <circle cx={xNode} cy={yNode} r={nodeR} fill="rgba(92,20,20,0.90)" stroke="rgba(168,133,74,0.35)" strokeWidth="1" />
+              {/* label inside the circle */}
               <text
-                x={xOuter}
-                y={yOuter + 4}
+                x={xNode}
+                y={yNode + 4}
                 textAnchor="middle"
-                fontSize="7"
+                fontSize="10"
                 fill="#F6F0DD"
-                fontFamily="sans-serif"
-                fontWeight="700"
-                letterSpacing="0.6"
-              >
-                {s.abbr}
-              </text>
-              <text
-                x={xLabel}
-                y={yLabel + 4}
-                textAnchor="middle"
-                fontSize="9.5"
-                fill="rgba(246,240,221,0.65)"
                 fontFamily="Georgia, serif"
                 fontStyle="italic"
               >
@@ -274,42 +261,12 @@ function IntegrationWheel({ inView }: { inView: boolean }) {
         })}
 
         {/* center cross */}
-        <line
-          x1={cx - 16}
-          y1={cy}
-          x2={cx + 16}
-          y2={cy}
-          stroke="rgba(168,133,74,0.7)"
-          strokeWidth="1"
-        />
-        <line
-          x1={cx}
-          y1={cy - 22}
-          x2={cx}
-          y2={cy + 22}
-          stroke="rgba(168,133,74,0.7)"
-          strokeWidth="1"
-        />
-        <text
-          x={cx}
-          y={cy - 9}
-          textAnchor="middle"
-          fontSize="8.5"
-          fill="rgba(168,133,74,0.9)"
-          fontFamily="Georgia, serif"
-          fontStyle="italic"
-        >
+        <line x1={cx - 18} y1={cy} x2={cx + 18} y2={cy} stroke="rgba(168,133,74,0.7)" strokeWidth="1" />
+        <line x1={cx} y1={cy - 24} x2={cx} y2={cy + 24} stroke="rgba(168,133,74,0.7)" strokeWidth="1" />
+        <text x={cx} y={cy - 9} textAnchor="middle" fontSize="9" fill="rgba(168,133,74,0.9)" fontFamily="Georgia, serif" fontStyle="italic">
           sub domnia
         </text>
-        <text
-          x={cx}
-          y={cy + 9}
-          textAnchor="middle"
-          fontSize="8.5"
-          fill="rgba(168,133,74,0.9)"
-          fontFamily="Georgia, serif"
-          fontStyle="italic"
-        >
+        <text x={cx} y={cy + 9} textAnchor="middle" fontSize="9" fill="rgba(168,133,74,0.9)" fontFamily="Georgia, serif" fontStyle="italic">
           lui Hristos
         </text>
       </svg>

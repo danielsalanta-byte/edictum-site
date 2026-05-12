@@ -16,6 +16,29 @@ export default function ValuesGrid() {
             Fundamentul caracterului pe care îl cultivăm în fiecare elev Edictum —
             după chipul lui Hristos.
           </p>
+
+          <div className="mt-8 pt-8 border-t border-gold/20 space-y-4 text-left">
+            <p className="font-serif text-ink/80 leading-relaxed">
+              Cele 10 virtuți ale școlii Edictum sunt studiate și memorate constant
+              pe parcursul anilor de formare. Fiecare virtute este repetată timp de{" "}
+              <strong>două săptămâni</strong>, atât în engleză, cât și în română,
+              pentru a fi înțeleasă și interiorizată.
+            </p>
+            <p className="font-serif text-ink/75 leading-relaxed">
+              Prin această repetiție intenționată, caracterul copiilor este format în
+              mod consecvent. Credem că educația adevărată nu înseamnă doar
+              informație, ci{" "}
+              <strong>formarea inimii și a obiceiurilor</strong>.
+            </p>
+            <p className="font-serif text-ink/70 leading-relaxed">
+              Astfel, copiii învață să trăiască cu disciplină, responsabilitate și
+              credincioșie față de Hristos în{" "}
+              <span className="font-display text-[0.78rem] tracking-[0.15em] text-gold-deep uppercase">
+                Familie · Muncă · Biserică · Societate
+              </span>
+              .
+            </p>
+          </div>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-5 lg:gap-6">

@@ -5,10 +5,9 @@ import { useState } from "react";
 import Logo from "./Logo";
 
 const navLinks = [
+  { href: "/", label: "Școala Edictum" },
   { href: "/educatie-clasica", label: "Educație Clasică" },
   { href: "/educatie-clasica/memoria-press", label: "Memoria Press" },
-  { href: "/#programe", label: "Programe" },
-  { href: "/despre", label: "Despre Noi" },
   { href: "/#faq", label: "Întrebări" },
   { href: "/#donatii", label: "Donații" },
 ];
@@ -20,7 +19,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-parchment/85 border-b border-gold/20">
       <div className="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
         <Link href="/" aria-label="Edictum — acasă" className="block">
-          <Logo variant="color" height={56} />
+          <Logo variant="color" height={50} />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">

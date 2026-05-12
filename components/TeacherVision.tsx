@@ -23,36 +23,41 @@ export default function TeacherVision() {
         <div className="order-1 lg:order-2">
           <p className="eyebrow mb-4">Cadrele didactice</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-6 leading-tight">
-            Profesori chemați la vocație
+            Profesori pentru generații
           </h2>
           <Ornament className="mb-8 justify-start [&>svg]:opacity-90" />
 
           <div className="space-y-5 font-serif text-lg text-graphite/85 leading-relaxed">
             <p>
-              Ne dorim să cultivăm aceleași calități în corpul didactic. Dorim
-              ca profesorii noștri să fie
-              <strong className="text-ink-deep"> profesioniști și sârguincioși</strong>
-              în munca lor, înzestrați în actul predării, iubindu-și elevii și
-              disciplinele.
+              Ne dorim să cultivăm aceleași virtuți și în rândul corpului nostru
+              profesoral. Dorim profesori care își privesc munca nu doar ca pe o
+              profesie, ci ca pe o{" "}
+              <strong className="text-ink-deep">chemare</strong> — oameni dedicați,
+              harnici și excelenți în actul predării, care își iubesc atât elevii,
+              cât și disciplinele pe care le predau.
             </p>
             <p>
-              Ne dorim ca ei să înțeleagă limpede educația clasică creștină —
-              cum funcționează în clasa lor și cum se înscrie munca lor în
-              întreg; să poarte o
-              <strong className="text-ink-deep"> foame de o viață pentru a învăța și a crește</strong>;
-              și să aibă răgazul de a fi reîmprospătați și înnoiți.
+              Ne dorim cadre didactice care înțeleg profund frumusețea și scopul
+              educației clasice creștine: cum prinde ea viață în sala de clasă și
+              cum contribuie fiecare lecție la formarea întregului om. Profesori
+              animați de o{" "}
+              <strong className="text-ink-deep">dorință continuă de a învăța, de a crește</strong>{" "}
+              și de a se maturiza intelectual și spiritual, având totodată timpul
+              și echilibrul necesare pentru a fi reîmprospătați și întăriți în
+              lucrarea lor.
             </p>
             <p>
-              Ne dorim să-i vedem
-              <strong className="text-ink-deep"> mentorându-și colegii mai noi</strong>
-              și fiind sfătuitori academici pentru elevi; maturizându-se în
-              Hristos, crescând în cunoașterea lui Dumnezeu, cu proprii lor
-              copii umblând cu Domnul.
+              Dorim să îi vedem{" "}
+              <strong className="text-ink-deep">mentorând generațiile mai tinere de profesori</strong>,
+              călăuzind elevii cu înțelepciune și maturizându-se ei înșiși în
+              Hristos — crescând în cunoașterea lui Dumnezeu și conducându-și
+              propriile familii în credincioșie față de Domnul.
             </p>
             <p>
-              Pe lângă acestea, dorim ca poziția lor să le permită o carieră
-              sustenabilă și bine remunerată la Edictum — pentru ca slujirea
-              lor să rodească peste generații.
+              În același timp, ne dorim ca Edictum să ofere profesorilor săi o{" "}
+              <strong className="text-ink-deep">carieră sustenabilă, demnă și bine răsplătită</strong>,
+              astfel încât slujirea lor să poată aduce rod nu doar pentru un
+              sezon, ci pentru generații întregi.
             </p>
           </div>
         </div>

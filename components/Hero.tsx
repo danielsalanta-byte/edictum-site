@@ -27,7 +27,7 @@ export default function Hero() {
         <Seal variant="burgundy" size={640} />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-16 pb-24 lg:pt-24 lg:pb-32">
+      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-16 pb-8 lg:pt-24 lg:pb-10">
         <div className="text-center max-w-4xl mx-auto animate-fade-up">
           <p className="eyebrow mb-6">Cluj-Napoca · Toamna 2026</p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display leading-[1.1] mb-6 text-ink">

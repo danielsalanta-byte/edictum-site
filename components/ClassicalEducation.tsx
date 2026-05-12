@@ -1,4 +1,4 @@
-import { Ornament } from "./Ornament";
+﻿import { Ornament } from "./Ornament";
 
 const principles = [
   {
@@ -12,7 +12,7 @@ const principles = [
       "Educația clasică cultivă în student uneltele învățării pentru a putea ajunge la cunoașterea adevărului, dragostea pentru frumos și dorința pentru bine.",
   },
   {
-    title: "„Paideia” Creștină",
+    title: "Paideia Creștină",
     body:
       "Scopul final al educației clasice creștine este de a-l pregăti pe copil să Îl laude pe Dumnezeu în toate colțurile vieții sale. Elevul este cufundat în învățătura lui Dumnezeu și crește cu o viziune creștină asupra întregii lumi.",
   },
@@ -32,9 +32,9 @@ const principles = [
       "Trivium se referă la cele trei arte liberale lingvistice: gramatica, logica și retorica. Capacitatea de a înțelege și exprima cuvinte este strâns legată de capacitatea de a gândi.",
   },
   {
-    title: "O Abordare Integrată",
+    title: "Quadrivium",
     body:
-      "Lumea creată este coerentă și Îl laudă pe Creator. Educația clasică integrează ariile cunoașterii ajutând elevii să facă legături între domenii și să raporteze totul la Dumnezeu.",
+      "Quadrivium reunește cele patru arte liberale matematice: aritmetica, geometria, muzica și astronomia. Ele formează înțelegerea ordinii lumii create — numărul, spațiul, proporția și mișcarea — ca expresie a înțelepciunii lui Dumnezeu.",
   },
   {
     title: "Uneltele Pierdute ale Învățării",
@@ -45,7 +45,7 @@ const principles = [
 
 export default function ClassicalEducation() {
   return (
-    <section id="educatie-clasica" className="py-24 lg:py-32">
+    <section className="py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="eyebrow mb-4">Fundamentele formării</p>
