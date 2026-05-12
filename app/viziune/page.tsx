@@ -464,8 +464,8 @@ export default function ViziunePage() {
             <div className="grid grid-cols-2 gap-4">
               <div className="relative aspect-square overflow-hidden border border-gold/20">
                 <Image
-                  src={IMG.fatherChild}
-                  alt={IMG_ALT.fatherChild}
+                  src={IMG.childrenUniform}
+                  alt={IMG_ALT.childrenUniform}
                   fill
                   sizes="25vw"
                   className="object-cover"
