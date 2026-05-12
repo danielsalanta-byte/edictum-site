@@ -35,6 +35,7 @@ export const IMG = {
 
   // Cluj / Romania architectural
   clujRooftops: u("photo-1602002418082-a4443e081dd1"),       // historic European rooftops
+  sfMihailCluj: u("photo-1678736680989-195226823176"),       // St. Michael's Church Cluj-Napoca + Matthias Corvinus statue
 
   // Local photos (saved in /public)
   classroomEdictum: "/classroom.png",
@@ -59,5 +60,6 @@ export const IMG_ALT = {
   fatherChild: "Tată citind împreună cu copilul său",
   candlelight: "Cărți și lumină caldă, atmosferă de studiu",
   clujRooftops: "Acoperișuri istorice europene, lumină de seară",
+  sfMihailCluj: "Biserica Sfântul Mihail din Cluj-Napoca cu statuia ecvestră a lui Matei Corvin",
   classroomEdictum: "Sală de clasă a unei școli clasice creștine — elevi în uniforme verzi, profesor la tablă albă",
 };

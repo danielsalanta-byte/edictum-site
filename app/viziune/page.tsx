@@ -157,16 +157,6 @@ export default function ViziunePage() {
             </div>
           </div>
 
-          {/* classroom photo */}
-          <div className="mt-20 relative aspect-[16/7] overflow-hidden border border-gold/20">
-            <Image
-              src={IMG.classroomEdictum}
-              alt={IMG_ALT.classroomEdictum}
-              fill
-              sizes="100vw"
-              className="object-cover object-top hover:scale-105 transition-transform duration-700"
-            />
-          </div>
         </div>
       </section>
 
@@ -339,8 +329,8 @@ export default function ViziunePage() {
             <div className="relative">
               <div className="relative aspect-[3/4] overflow-hidden border border-gold/25">
                 <Image
-                  src={IMG.oxfordCourt}
-                  alt={IMG_ALT.oxfordCourt}
+                  src={IMG.sfMihailCluj}
+                  alt={IMG_ALT.sfMihailCluj}
                   fill
                   sizes="(min-width: 1024px) 50vw, 100vw"
                   className="object-cover"
