@@ -27,15 +27,15 @@ export default function Hero() {
         <Seal variant="burgundy" size={640} />
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10 pt-16 pb-8 lg:pt-24 lg:pb-10">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 pt-10 pb-8 lg:pt-24 lg:pb-10">
         <div className="text-center max-w-4xl mx-auto animate-fade-up">
           <p className="eyebrow mb-6">Cluj-Napoca · Toamna 2026</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-display leading-[1.1] mb-6 text-ink">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display leading-[1.1] mb-6 text-ink">
             Școala Clasică Creștină
             <br />
             <span className="text-gold-deep">Edictum</span>
           </h1>
-          <p className="text-xl md:text-2xl font-serif italic text-ink/75 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl md:text-2xl font-serif italic text-ink/75 max-w-3xl mx-auto leading-relaxed">
             O educație creștină și clasică pentru formarea minții, caracterului
             și sufletului.
           </p>
@@ -74,7 +74,7 @@ export default function Hero() {
         </div>
 
         {/* video */}
-        <div className="mt-20 max-w-5xl mx-auto animate-fade-in">
+        <div className="mt-10 lg:mt-20 max-w-5xl mx-auto animate-fade-in">
           <HeroVideo />
           <p className="text-center mt-4 text-sm text-ink/55 italic font-serif">
             Ideile au consecințe. Urmărește video-ul pentru a afla despre

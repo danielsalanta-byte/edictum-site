@@ -79,7 +79,7 @@ const stages = [
 
 export default function ProgramStages() {
   return (
-    <section className="pt-14 lg:pt-16 pb-24 lg:pb-32 bg-parchment">
+    <section className="pt-10 lg:pt-16 pb-16 lg:pb-32 bg-parchment">
       <div className="max-w-7xl mx-auto px-6 lg:px-10">
 
         {/* Header */}
@@ -96,7 +96,7 @@ export default function ProgramStages() {
         </div>
 
         {/* English Language Section */}
-        <div className="mb-16 border border-gold/25 bg-parchment-warm/60 px-8 py-10 lg:px-12 lg:py-12">
+        <div className="mb-12 border border-gold/25 bg-parchment-warm/60 px-5 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-12">
           <div className="flex items-center gap-3 mb-8">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" className="shrink-0 text-gold-deep">
               <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="1.5"/>
@@ -105,7 +105,7 @@ export default function ProgramStages() {
             <p className="font-display text-[0.62rem] tracking-[0.28em] uppercase text-gold-deep">Predare în Limba Engleză</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Pillar 1 */}
             <div className="space-y-3">
               <div className="w-10 h-10 border border-gold/40 flex items-center justify-center">

@@ -60,11 +60,11 @@ const items = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="py-24 lg:py-32 bg-parchment-warm">
-      <div className="max-w-4xl mx-auto px-6 lg:px-10">
+    <section id="faq" className="py-14 lg:py-32 bg-parchment-warm">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="text-center mb-14">
           <p className="eyebrow mb-4">Întrebări frecvente</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6">
             Răspunsuri pentru părinți
           </h2>
           <Ornament />

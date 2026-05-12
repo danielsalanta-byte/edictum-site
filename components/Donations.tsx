@@ -31,7 +31,7 @@ export default function Donations() {
   }
 
   return (
-    <section id="donatii" className="py-24 lg:py-32 bg-ink text-parchment relative overflow-hidden">
+    <section id="donatii" className="py-14 lg:py-32 bg-ink text-parchment relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <Image
           src={IMG.fatherChild}
@@ -45,10 +45,10 @@ export default function Donations() {
         <div className="absolute inset-0 bg-gradient-to-b from-ink/80 via-transparent to-ink" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-2 gap-10 lg:gap-14">
         <div>
           <p className="eyebrow text-gold-light mb-4">Susține Edictum</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-6 text-parchment">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6 text-parchment">
             Susține Școala Edictum
           </h2>
           <Ornament className="mb-6 justify-start [&>svg]:opacity-90" />
@@ -74,7 +74,7 @@ export default function Donations() {
         </div>
 
         {done ? (
-          <div className="bg-parchment text-ink p-10 lg:p-12 border border-gold-deep flex flex-col justify-center text-center">
+          <div className="bg-parchment text-ink p-6 sm:p-10 lg:p-12 border border-gold-deep flex flex-col justify-center text-center">
             <div className="text-gold-deep mb-4">
               <svg width="48" height="48" viewBox="0 0 48 48" className="mx-auto" fill="none">
                 <circle cx="24" cy="24" r="22" stroke="currentColor" strokeWidth="1.5" />
@@ -100,11 +100,11 @@ export default function Donations() {
         ) : (
           <form
             onSubmit={submit}
-            className="bg-parchment text-ink p-8 lg:p-10 border border-gold-deep shadow-column"
+            className="bg-parchment text-ink p-5 sm:p-8 lg:p-10 border border-gold-deep shadow-column"
           >
             <h3 className="font-display text-2xl mb-6">Donație rapidă</h3>
 
-            <div className="grid grid-cols-4 gap-2 mb-4">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
               {presets.map((p) => (
                 <button
                   type="button"

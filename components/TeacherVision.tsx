@@ -4,8 +4,8 @@ import { Ornament } from "./Ornament";
 
 export default function TeacherVision() {
   return (
-    <section className="py-24 lg:py-32">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+    <section className="py-14 lg:py-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-2 gap-8 lg:gap-20 items-center">
         <div className="relative order-2 lg:order-1">
           <div className="relative aspect-[5/6] overflow-hidden border border-gold/30 shadow-column">
             <Image
@@ -22,12 +22,12 @@ export default function TeacherVision() {
 
         <div className="order-1 lg:order-2">
           <p className="eyebrow mb-4">Cadrele didactice</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6 leading-tight">
             Profesori pentru generații
           </h2>
           <Ornament className="mb-8 justify-start [&>svg]:opacity-90" />
 
-          <div className="space-y-5 font-serif text-lg text-graphite/85 leading-relaxed">
+          <div className="space-y-5 font-serif text-base sm:text-lg text-graphite/85 leading-relaxed">
             <p>
               Ne dorim să cultivăm aceleași virtuți și în rândul corpului nostru
               profesoral. Dorim profesori care își privesc munca nu doar ca pe o

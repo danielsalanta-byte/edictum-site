@@ -3,8 +3,8 @@ import Logo from "./Logo";
 
 export default function Footer() {
   return (
-    <footer className="bg-ink text-parchment mt-32">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-16 grid md:grid-cols-4 gap-10">
+    <footer className="bg-ink text-parchment mt-16 lg:mt-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 py-12 lg:py-16 grid sm:grid-cols-2 md:grid-cols-4 gap-8">
         <div className="md:col-span-1">
           <Logo variant="light" height={64} />
           <p className="mt-4 text-parchment/70 text-sm leading-relaxed">
@@ -21,7 +21,6 @@ export default function Footer() {
             <li><Link href="/#viziune" className="hover:text-gold-light">Viziune</Link></li>
             <li><Link href="/#educatie-clasica" className="hover:text-gold-light">Educație Clasică</Link></li>
             <li><Link href="/#programe" className="hover:text-gold-light">Programe</Link></li>
-            <li><Link href="/despre" className="hover:text-gold-light">Despre Noi</Link></li>
             <li><Link href="/marturisire" className="hover:text-gold-light">Mărturisirea de Credință</Link></li>
             <li><Link href="/istoric" className="hover:text-gold-light">Scurt Istoric</Link></li>
           </ul>

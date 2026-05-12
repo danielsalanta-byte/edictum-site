@@ -262,12 +262,12 @@ export default function SixLoves() {
   const active = LOVES.find((l) => l.id === selected) ?? null;
 
   return (
-    <section className="py-24 lg:py-32 bg-parchment overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+    <section className="py-14 lg:py-32 bg-parchment overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         {/* Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-2xl mx-auto mb-10 lg:mb-16">
           <p className="eyebrow mb-4">Cele șase iubiri</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6 leading-tight">
             Cele șase iubiri
             <br />
             ale elevului Edictum
@@ -294,7 +294,7 @@ export default function SixLoves() {
                 gridTemplateColumns: "repeat(4, minmax(0,1fr))",
                 gridTemplateRows: "auto auto auto",
                 gap: "clamp(8px, 2vw, 20px)",
-                width: "clamp(280px, 50vw, 440px)",
+                width: "clamp(260px, 80vw, 440px)",
               }}
             >
               {/* Connector lines SVG overlay */}

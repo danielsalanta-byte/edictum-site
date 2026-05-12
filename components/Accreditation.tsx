@@ -2,13 +2,13 @@ import { Ornament } from "./Ornament";
 
 export default function Accreditation() {
   return (
-    <section className="py-24 lg:py-32 bg-parchment-warm">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+    <section className="py-14 lg:py-32 bg-parchment-warm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="eyebrow mb-4">Recunoaștere internațională</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6 leading-tight">
             Acreditare Provizorie
           </h2>
           <Ornament className="mb-6" />
@@ -94,7 +94,7 @@ export default function Accreditation() {
             <div className="absolute -bottom-3 -right-3 w-10 h-10 border-r-2 border-b-2 border-gold-deep hidden lg:block" />
 
             {/* Paper */}
-            <div className="bg-white border border-ink/10 shadow-column px-10 py-12 font-serif text-ink-deep/90 relative overflow-hidden">
+            <div className="bg-white border border-ink/10 shadow-column px-5 py-8 sm:px-10 sm:py-12 font-serif text-ink-deep/90 relative overflow-hidden">
 
               {/* Subtle decorative side pattern (mimics letterhead ornaments) */}
               <div className="absolute left-0 top-0 bottom-0 w-8 border-r border-ink/5 flex flex-col items-center justify-center gap-3 opacity-20 pointer-events-none select-none">

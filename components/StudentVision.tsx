@@ -52,7 +52,7 @@ const verticals = [
 
 export default function StudentVision() {
   return (
-    <section className="relative py-24 lg:py-32 bg-ink-deep text-parchment overflow-hidden">
+    <section className="relative py-14 lg:py-32 bg-ink-deep text-parchment overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <Image
           src={IMG.girlReading}
@@ -70,14 +70,14 @@ export default function StudentVision() {
         {/* Header */}
         <div className="text-center mb-12">
           <p className="eyebrow !text-gold-light mb-4">Viziunea noastră despre absolvent</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display text-parchment mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display text-parchment mb-6 leading-tight">
             Tinerii pe care dorim<br />să-i formăm
           </h2>
           <Ornament className="mb-2 [&>svg]:text-gold-light" />
         </div>
 
         {/* Body paragraphs */}
-        <div className="space-y-6 font-serif text-lg md:text-xl text-parchment/88 leading-relaxed">
+        <div className="space-y-6 font-serif text-base sm:text-lg md:text-xl text-parchment/88 leading-relaxed">
           <p>
             Ne dorim să formăm absolvenți — tineri bărbați și femei — care{" "}
             <strong className="text-parchment">gândesc limpede</strong>, ascultă

@@ -23,15 +23,15 @@ export default function Vision() {
       </div>
 
       {/* Content */}
-      <div className="py-20 lg:py-28">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+      <div className="py-12 lg:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 grid lg:grid-cols-2 gap-8 lg:gap-20 items-center">
           <div className="order-2 lg:order-1">
             <p className="eyebrow mb-4">Viziunea noastră</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6 leading-tight">
               Viziunea noastră clasică creștină
             </h2>
             <Ornament className="mb-8 justify-start [&>svg]:opacity-90" />
-            <p className="text-lg md:text-xl font-serif text-ink/85 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl font-serif text-ink/85 leading-relaxed">
               Școala Clasică Creștină Edictum există pentru a forma copii care
               iubesc adevărul, binele și frumosul, sub domnia lui Hristos.
               Credem că educația nu este doar transmitere de informații, ci

@@ -141,7 +141,7 @@ function CircularStat({
 }) {
   return (
     <div
-      className="text-center p-8 border border-gold/25 bg-white/55 backdrop-blur-sm"
+      className="text-center p-5 sm:p-8 border border-gold/25 bg-white/55 backdrop-blur-sm"
       style={{
         opacity: inView ? 1 : 0,
         transform: inView ? "translateY(0)" : "translateY(28px)",
@@ -358,11 +358,11 @@ const tgbItems = [
 
 function TGBVisual({ inView }: { inView: boolean }) {
   return (
-    <div className="grid md:grid-cols-3 gap-6 mt-10">
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 mt-10">
       {tgbItems.map((item, i) => (
         <div
           key={item.en}
-          className="border border-gold/35 p-8 text-center"
+          className="border border-gold/35 p-5 sm:p-8 text-center"
           style={{
             opacity: inView ? 1 : 0,
             transform: inView ? "translateY(0)" : "translateY(32px)",
@@ -404,7 +404,7 @@ export default function ViziuneStats({
     <div ref={ref}>
       {section === "academic" && <AcademicChart inView={inView} />}
       {section === "learning" && (
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
           <CircularStat
             value="6,7×"
             label="Cititori constanți"

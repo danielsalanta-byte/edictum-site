@@ -55,13 +55,13 @@ const pillars = [
 
 export default function ParentVision() {
   return (
-    <section className="py-24 lg:py-32 bg-parchment-warm">
-      <div className="max-w-6xl mx-auto px-6 lg:px-10">
+    <section className="py-14 lg:py-32 bg-parchment-warm">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-10">
 
         {/* Header */}
-        <div className="text-center mb-16 max-w-3xl mx-auto">
+        <div className="text-center mb-10 lg:mb-16 max-w-3xl mx-auto">
           <p className="eyebrow mb-4">Școala & Părinții</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-6 leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6 leading-tight">
             O comunitate de familii care cresc copiii în aceeași direcție
           </h2>
           <Ornament className="mb-6 [&>svg]:opacity-90" />
@@ -92,7 +92,7 @@ export default function ParentVision() {
         </div>
 
         {/* Main text — two columns */}
-        <div className="grid md:grid-cols-2 gap-10 mb-14 font-serif text-lg text-graphite/85 leading-relaxed">
+        <div className="grid md:grid-cols-2 gap-8 mb-10 font-serif text-base sm:text-lg text-graphite/85 leading-relaxed">
           <div className="space-y-5">
             <p>
               Ne dorim părinți care înțeleg și îmbrățișează viziunea educației

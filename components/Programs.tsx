@@ -27,11 +27,11 @@ const programs = [
 
 export default function Programs() {
   return (
-    <section id="programe" className="py-24 lg:py-32 bg-parchment-warm">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+    <section id="programe" className="py-14 lg:py-32 bg-parchment-warm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <p className="eyebrow mb-4">Programele noastre</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display mb-6">
             Înscrieri 2026 – 2027
           </h2>
           <Ornament className="mb-6" />
@@ -57,9 +57,9 @@ export default function Programs() {
                 <div className="absolute inset-0 bg-gradient-to-t from-parchment via-parchment/15 to-transparent" />
               </div>
               <div className="h-1 bg-gradient-to-r from-gold-deep via-gold-light to-gold-deep" />
-              <div className="p-10 lg:p-12 flex-1 flex flex-col">
+              <div className="p-6 sm:p-8 lg:p-12 flex-1 flex flex-col">
                 <p className="eyebrow mb-3">{p.age}</p>
-                <h3 className="font-display text-3xl md:text-4xl text-ink mb-5">
+                <h3 className="font-display text-2xl sm:text-3xl md:text-4xl text-ink mb-5">
                   {p.name}
                 </h3>
                 <p className="text-ink/75 font-serif text-lg leading-relaxed mb-8 flex-1">

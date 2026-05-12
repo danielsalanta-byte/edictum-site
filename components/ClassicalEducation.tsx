@@ -45,8 +45,8 @@ const principles = [
 
 export default function ClassicalEducation() {
   return (
-    <section className="py-24 lg:py-32">
-      <div className="max-w-7xl mx-auto px-6 lg:px-10">
+    <section className="py-14 lg:py-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="eyebrow mb-4">Fundamentele formării</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display mb-6">
@@ -63,7 +63,7 @@ export default function ClassicalEducation() {
           {principles.map((p, i) => (
             <article
               key={p.title}
-              className="column-card p-7 rounded-sm"
+              className="column-card p-5 sm:p-7 rounded-sm"
               style={{ animationDelay: `${i * 60}ms` }}
             >
               <div className="text-gold-deep font-display text-xs tracking-[0.28em] uppercase mb-3">
