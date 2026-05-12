@@ -172,7 +172,7 @@ function IconVirtute({ sel }: { sel: boolean }) {
   );
 }
 
-const ICONS: Record<string, (sel: boolean) => JSX.Element> = {
+const ICONS: Record<string, (sel: boolean) => React.JSX.Element> = {
   aproapele: (s) => <IconAproapele sel={s} />,
   dumnezeu: (s) => <IconDumnezeu sel={s} />,
   creativitate: (s) => <IconCreativitate sel={s} />,
