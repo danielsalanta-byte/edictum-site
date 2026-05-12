@@ -32,8 +32,8 @@ export default function MemoriaPressPage() {
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-black/20" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/15 to-black/60" />
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/10 to-black/65" />
         <div className="absolute inset-0 opacity-[0.04] seal-watermark" />
 
         <div className="relative z-10 max-w-5xl mx-auto w-full px-6 lg:px-10 pb-16 pt-40 text-center">
@@ -55,11 +55,11 @@ export default function MemoriaPressPage() {
           <Ornament className="mb-8 [&>svg]:text-gold-light" />
 
           <div className="max-w-3xl mx-auto space-y-5 mb-14">
-            <p className="text-xl md:text-2xl font-serif italic text-parchment/90 leading-relaxed">
+            <p className="text-xl md:text-2xl font-serif italic text-white/95 leading-relaxed">
               O viziune completă asupra formării omului — construită pe adevăr,
               disciplină intelectuală, frumusețe și caracter creștin.
             </p>
-            <p className="text-base font-serif text-parchment/68 leading-relaxed">
+            <p className="text-base font-serif text-white/85 leading-relaxed">
               Unul dintre cele mai solide, coerente și apreciate modele de
               educație clasică creștină din lume. Nu o colecție de manuale —
               ci o cale spre formarea omului întreg.
