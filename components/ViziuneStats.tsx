@@ -450,7 +450,7 @@ export default function ViziuneStats({
         <div className="grid md:grid-cols-3 gap-6">
           <CircularStat
             value="6,7×"
-            label="Lectori constanți"
+            label="Cititori constanți"
             sub="Mai predispuși să citească regulat față de absolvenții altor sisteme educaționale — o cultură a lecturii formată de-a lungul anilor de studiu clasic."
             inView={inView}
             delay={0}

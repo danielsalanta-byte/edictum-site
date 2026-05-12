@@ -157,26 +157,15 @@ export default function ViziunePage() {
             </div>
           </div>
 
-          {/* image trio */}
-          <div className="mt-20 grid md:grid-cols-3 gap-4">
-            {[
-              { src: IMG.teacherBoard, alt: IMG_ALT.teacherBoard },
-              { src: IMG.classroomQuiet, alt: IMG_ALT.classroomQuiet },
-              { src: IMG.studentDesk, alt: IMG_ALT.studentDesk },
-            ].map((img, i) => (
-              <div
-                key={i}
-                className="relative aspect-[4/3] overflow-hidden border border-gold/20"
-              >
-                <Image
-                  src={img.src}
-                  alt={img.alt}
-                  fill
-                  sizes="(min-width: 768px) 33vw, 100vw"
-                  className="object-cover hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-            ))}
+          {/* classroom photo */}
+          <div className="mt-20 relative aspect-[16/7] overflow-hidden border border-gold/20">
+            <Image
+              src={IMG.classroomEdictum}
+              alt={IMG_ALT.classroomEdictum}
+              fill
+              sizes="100vw"
+              className="object-cover object-top hover:scale-105 transition-transform duration-700"
+            />
           </div>
         </div>
       </section>
@@ -222,34 +211,14 @@ export default function ViziunePage() {
                 nepretuit, pe care o purtăm toată viața.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="relative aspect-square overflow-hidden border border-gold/20">
-                <Image
-                  src={IMG.girlReading}
-                  alt={IMG_ALT.girlReading}
-                  fill
-                  sizes="25vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative aspect-square overflow-hidden border border-gold/20">
-                <Image
-                  src={IMG.fatherChild}
-                  alt={IMG_ALT.fatherChild}
-                  fill
-                  sizes="25vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="relative aspect-[2/1] overflow-hidden border border-gold/20 col-span-2">
-                <Image
-                  src={IMG.libraryWindow}
-                  alt={IMG_ALT.libraryWindow}
-                  fill
-                  sizes="50vw"
-                  className="object-cover"
-                />
-              </div>
+            <div className="relative aspect-[4/3] overflow-hidden border border-gold/20">
+              <Image
+                src={IMG.classroomEdictum}
+                alt={IMG_ALT.classroomEdictum}
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="object-cover object-top"
+              />
             </div>
           </div>
 

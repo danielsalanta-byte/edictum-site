@@ -35,6 +35,9 @@ export const IMG = {
 
   // Cluj / Romania architectural
   clujRooftops: u("photo-1602002418082-a4443e081dd1"),       // historic European rooftops
+
+  // Local photos (saved in /public)
+  classroomEdictum: "/classroom.png",
 };
 
 export const IMG_ALT = {
@@ -56,4 +59,5 @@ export const IMG_ALT = {
   fatherChild: "Tată citind împreună cu copilul său",
   candlelight: "Cărți și lumină caldă, atmosferă de studiu",
   clujRooftops: "Acoperișuri istorice europene, lumină de seară",
+  classroomEdictum: "Sală de clasă a unei școli clasice creștine — elevi în uniforme verzi, profesor la tablă albă",
 };
