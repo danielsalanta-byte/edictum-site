@@ -161,7 +161,7 @@ export default function ProgramStages() {
               </div>
               <p className="font-serif text-graphite/80 text-sm leading-relaxed">
                 Etapa temeliei — „gramatica lucrurilor". Nu se referă doar la reguli de limbă,
-                ci la înțelegerea elementelor fundamentale ale fiecărei discipline. Elevul adună
+                ci la înțelegerea elementelor fundamentale ale fiecărei discipline. Elevul acumulează
                 cu bucurie cunoștințe, vocabular și ordine, construind fundația pe care va putea
                 gândi mai târziu.
               </p>
