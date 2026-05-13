@@ -54,7 +54,7 @@ const stages = [
     stage: "Etapa Gramaticii",
     range: "Clasele 4 – 6",
     desc: "Înțelegerea se adâncește pe măsură ce așteptările și responsabilitățile cresc. Profesorii îl ajută pe copilul tău să dezvolte obiceiuri solide, perseverență și o conștiință tot mai clară a legăturii dintre cunoaștere, credință și viață.",
-    img: IMG.classroomEdictum,
+    img: IMG.cicluPrimarMare,
     stageColor: "text-gold-light",
   },
   {
@@ -63,7 +63,7 @@ const stages = [
     stage: "Etapa Logicii",
     range: "Clasele 7 – 8",
     desc: "Întrebările și dezbaterile joacă un rol tot mai important în clasă. Adolescentul tău este ghidat să gândească cu rigurozitate, să caute adevărul lui Dumnezeu și să se implice în dialog cu smerenie și respect.",
-    img: IMG.cicluPrimarMare,
+    img: IMG.gimnaziu,
     stageColor: "text-gold",
   },
   {

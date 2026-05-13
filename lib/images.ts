@@ -46,6 +46,7 @@ export const IMG = {
   cicluPrimarMare: "/ciclu-primar-mare.jpg",
   liceu: "/liceu.jpg",
   grupaMijlocie: "/grupa-mijlocie.jpg",
+  gimnaziu: "/gimnaziu.jpg",
 };
 
 export const IMG_ALT = {
