@@ -148,6 +148,61 @@ export default function ProgramStages() {
           </div>
         </div>
 
+        {/* Trivium Section */}
+        <div className="mb-12">
+          <p className="font-serif text-graphite/80 leading-relaxed mb-10 max-w-3xl">
+            În educația clasică creștină, cele trei etape ale triviumului urmăresc felul în care
+            copilul se raportează la adevăr și la disciplinele pe care le studiază.
+          </p>
+          <div className="grid md:grid-cols-3 gap-0 border border-gold/25">
+            {/* Gramatica */}
+            <div className="p-6 sm:p-8 lg:p-10 border-b md:border-b-0 md:border-r border-gold/25">
+              <div className="flex items-center gap-3 mb-5">
+                <span className="font-display text-[0.58rem] tracking-[0.28em] uppercase text-gold-deep bg-gold/10 border border-gold/30 px-3 py-1.5">
+                  I
+                </span>
+                <h3 className="font-display text-xl text-ink-deep">Etapa Gramaticii</h3>
+              </div>
+              <p className="font-serif text-graphite/80 text-sm leading-relaxed">
+                Etapa temeliei — „gramatica lucrurilor". Nu se referă doar la reguli de limbă,
+                ci la înțelegerea elementelor fundamentale ale fiecărei discipline. Elevul adună
+                cu bucurie cunoștințe, vocabular și ordine, construind fundația pe care va putea
+                gândi mai târziu.
+              </p>
+            </div>
+            {/* Logica */}
+            <div className="p-6 sm:p-8 lg:p-10 border-b md:border-b-0 md:border-r border-gold/25">
+              <div className="flex items-center gap-3 mb-5">
+                <span className="font-display text-[0.58rem] tracking-[0.28em] uppercase text-gold-deep bg-gold/10 border border-gold/30 px-3 py-1.5">
+                  II
+                </span>
+                <h3 className="font-display text-xl text-ink-deep">Etapa Logicii</h3>
+              </div>
+              <p className="font-serif text-graphite/80 text-sm leading-relaxed">
+                Momentul în care elevul începe să cerceteze relațiile dintre lucruri. Nu mai
+                întreabă doar „ce?", ci „de ce?" și „cum?". El caută cauze, conexiuni și
+                coerență între idei, comparând, argumentând și observând structura internă a
+                fiecărei discipline.
+              </p>
+            </div>
+            {/* Retorica */}
+            <div className="p-6 sm:p-8 lg:p-10">
+              <div className="flex items-center gap-3 mb-5">
+                <span className="font-display text-[0.58rem] tracking-[0.28em] uppercase text-gold-deep bg-gold/10 border border-gold/30 px-3 py-1.5">
+                  III
+                </span>
+                <h3 className="font-display text-xl text-ink-deep">Etapa Retoricii</h3>
+              </div>
+              <p className="font-serif text-graphite/80 text-sm leading-relaxed">
+                Maturizarea relației elevului cu disciplinele studiate. Adevărul înțeles și
+                ordonat este exprimat cu claritate, frumusețe și convingere. Elevul folosește
+                disciplinele ca instrumente pentru a sluji adevărul, cultura și aproapele său,
+                dezvoltând o voce proprie ancorată în credința creștină.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {stages.map((s) => (
