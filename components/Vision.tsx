@@ -5,20 +5,20 @@ import { IMG, IMG_ALT } from "@/lib/images";
 export default function Vision() {
   return (
     <section id="viziune" className="bg-parchment-warm">
-      {/* Editorial banner photo */}
-      <div className="relative h-72 md:h-96 overflow-hidden">
-        <Image
-          src={IMG.oldLibrary}
-          alt={IMG_ALT.oldLibrary}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink-deep/50 via-ink-deep/20 to-parchment-warm" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink-deep/30 to-transparent" />
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-          <Ornament className="[&>svg]:text-gold-light [&>svg]:opacity-80" />
+      {/* Decorative transition */}
+      <div className="flex flex-col items-center pt-14 pb-2 px-6">
+        <div className="flex items-center gap-4 w-full max-w-2xl">
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gold/40 to-gold/60" />
+          <svg width="10" height="10" viewBox="0 0 10 10" className="text-gold-deep shrink-0">
+            <rect x="1" y="1" width="8" height="8" fill="none" stroke="currentColor" strokeWidth="1" transform="rotate(45 5 5)" />
+          </svg>
+          <svg width="6" height="6" viewBox="0 0 10 10" className="text-gold shrink-0">
+            <rect x="1" y="1" width="8" height="8" fill="currentColor" stroke="currentColor" strokeWidth="1" transform="rotate(45 5 5)" />
+          </svg>
+          <svg width="10" height="10" viewBox="0 0 10 10" className="text-gold-deep shrink-0">
+            <rect x="1" y="1" width="8" height="8" fill="none" stroke="currentColor" strokeWidth="1" transform="rotate(45 5 5)" />
+          </svg>
+          <div className="flex-1 h-px bg-gradient-to-l from-transparent via-gold/40 to-gold/60" />
         </div>
       </div>
 
