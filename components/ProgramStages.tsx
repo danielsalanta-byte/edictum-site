@@ -26,7 +26,7 @@ const stages = [
     subtitle: null,
     stage: "Etapa Pre-Gramaticii",
     range: "5 – 6 ani",
-    desc: "Pregătirea pentru școală se face firesc, prin joacă structurată, exerciții de preascris și precitit, matematică intuitivă și imersie în limba engleză. Copiii cresc în autonomie, curiozitate și dragoste pentru adevăr.",
+    desc: "Pregătirea pentru școală se face firesc, prin joacă structurată, exerciții de scris și citit, matematică intuitivă și aprofundare în limba engleză. Copiii cresc în autonomie, curiozitate și dragoste pentru adevăr.",
     img: IMG.childWriting,
     stageColor: "text-gold",
   },
