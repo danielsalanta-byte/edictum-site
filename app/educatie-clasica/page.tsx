@@ -200,7 +200,7 @@ export default function EducatieClasicaPage() {
                 Într-o cultură dominată de consum rapid și atenție fragmentată,
                 educația clasică dezvoltă capacitatea rară de concentrare,
                 reflecție și contemplare — o comoară invizibilă, dar de
-                nepretuit, pe care o purtăm toată viața.
+                neprețuit, pe care o purtăm toată viața.
               </p>
             </div>
             <div className="relative aspect-[4/3] overflow-hidden border border-gold/20">
