@@ -102,15 +102,6 @@ export default function StudentVision() {
             să crească în înțelegere, dar totodată conștienți de limitele și
             deșertăciunea înțelepciunii desprinse de Dumnezeu.
           </p>
-          <p>
-            Dorim să crească având o{" "}
-            <strong className="text-parchment">inimă pentru cei pierduți</strong>{" "}
-            și curajul de a-i ridica pe cei care se îndreaptă spre pierzare; să
-            poată deosebi credința autentică de religia formală și să-L cunoască,
-            să-L iubească și să-L urmeze pe{" "}
-            <strong className="text-parchment">Domnul Isus Hristos</strong> cu
-            sinceritate și statornicie.
-          </p>
         </div>
 
         {/* Closing line */}
