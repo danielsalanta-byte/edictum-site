@@ -45,6 +45,7 @@ export const IMG = {
   clujPanorama: "/cluj-panorama.jpg",
   cicluPrimarMare: "/ciclu-primar-mare.jpg",
   liceu: "/liceu.jpg",
+  grupaMijlocie: "/grupa-mijlocie.jpg",
 };
 
 export const IMG_ALT = {

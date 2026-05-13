@@ -18,7 +18,7 @@ const stages = [
     stage: "Etapa Pre-Gramaticii",
     range: "4 – 5 ani",
     desc: "Copiii își extind limbajul, explorează lumea prin activități creative și dezvoltă primele abilități sociale. Fiecare zi aduce noi descoperiri ancorate în bucuria credinței, a comunității și a ordinii frumoase a creației.",
-    img: IMG.girlReading,
+    img: IMG.grupaMijlocie,
     stageColor: "text-gold",
   },
   {
