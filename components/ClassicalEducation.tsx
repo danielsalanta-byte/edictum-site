@@ -14,7 +14,7 @@ const principles = [
   {
     title: "Paideia Creștină",
     body:
-      "Scopul final al educației clasice creștine este de a-l pregăti pe copil să Îl laude pe Dumnezeu în toate colțurile vieții sale. Elevul este cufundat în învățătura lui Dumnezeu și crește cu o viziune creștină asupra întregii lumi.",
+      "Scopul final al educației clasice creștine este de a-l pregăti pe copil să Îl laude pe Dumnezeu în toate domeniile vieții sale. Elevul este cufundat în învățătura lui Dumnezeu și crește cu o viziune creștină asupra întregii lumi.",
   },
   {
     title: "Marile Cărți și Marile Idei",
