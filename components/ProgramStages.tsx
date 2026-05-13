@@ -45,7 +45,7 @@ const stages = [
     stage: "Etapa Gramaticii",
     range: "Clasele 1 – 3",
     desc: "Competențele academice de bază cresc pe măsură ce învățarea devine captivantă și semnificativă. Copilul tău începe să își construiască independența, descoperind adevărul, frumosul și ordinea în lumea creată de Dumnezeu.",
-    img: IMG.studentDesk,
+    img: IMG.classroomEdictum,
     stageColor: "text-gold-light",
   },
   {
@@ -54,7 +54,7 @@ const stages = [
     stage: "Etapa Gramaticii",
     range: "Clasele 4 – 6",
     desc: "Înțelegerea se adâncește pe măsură ce așteptările și responsabilitățile cresc. Profesorii îl ajută pe copilul tău să dezvolte obiceiuri solide, perseverență și o conștiință tot mai clară a legăturii dintre cunoaștere, credință și viață.",
-    img: IMG.teacherBoard,
+    img: IMG.cicluPrimarMare,
     stageColor: "text-gold-light",
   },
   {

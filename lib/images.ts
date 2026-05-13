@@ -43,6 +43,7 @@ export const IMG = {
   classroomEdictum: "/classroom.png",
   classroomEdictum2: "/classroom2.jpg",
   clujPanorama: "/cluj-panorama.jpg",
+  cicluPrimarMare: "/ciclu-primar-mare.jpg",
 };
 
 export const IMG_ALT = {
