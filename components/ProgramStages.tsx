@@ -89,10 +89,6 @@ export default function ProgramStages() {
             De la grădiniță până la liceu
           </h2>
           <Ornament className="mb-6" />
-          <p className="font-serif italic text-graphite/70 text-lg leading-relaxed">
-            Fiecare etapă este gândită în acord cu natura copilului și cu
-            metodologia clasică — Gramatica, Logica, Retorica.
-          </p>
         </div>
 
         {/* English Language Section */}
