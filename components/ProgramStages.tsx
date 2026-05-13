@@ -121,7 +121,7 @@ export default function ProgramStages() {
                 </svg>
               </div>
               <h4 className="font-display text-sm text-ink-deep leading-snug">Tranziție Bilingvă în Anii Mici</h4>
-              <p className="font-serif text-xs text-graphite/75 leading-relaxed">În primii ani — Grupa Mică, Mijlocie, Mare și Clasa Pregătitoare — predarea este bilingvă, pentru o intrare firească în limba engleză, fără presiune.</p>
+              <p className="font-serif text-xs text-graphite/75 leading-relaxed">În primii ani — Grupa Mică, Mijlocie, Mare și Clasa Pregătitoare — procesul de învățare se desfășoară bilingv, oferind copiilor o familiarizare naturală și echilibrată cu limba engleză.</p>
             </div>
 
             {/* Pillar 3 */}
