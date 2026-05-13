@@ -150,10 +150,6 @@ export default function ProgramStages() {
 
         {/* Trivium Section */}
         <div className="mb-12">
-          <p className="font-serif text-graphite/80 leading-relaxed mb-10 max-w-3xl">
-            În educația clasică creștină, cele trei etape ale triviumului urmăresc felul în care
-            copilul se raportează la adevăr și la disciplinele pe care le studiază.
-          </p>
           <div className="grid md:grid-cols-3 gap-0 border border-gold/25">
             {/* Gramatica */}
             <div className="p-6 sm:p-8 lg:p-10 border-b md:border-b-0 md:border-r border-gold/25">
