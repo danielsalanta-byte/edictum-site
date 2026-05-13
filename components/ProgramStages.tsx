@@ -132,7 +132,7 @@ export default function ProgramStages() {
                 </svg>
               </div>
               <h4 className="font-display text-sm text-ink-deep leading-snug">Disciplinele Predate în Engleză</h4>
-              <p className="font-serif text-xs text-graphite/75 leading-relaxed">Materiile sunt predate în engleză, astfel că elevii învață natural să gândească, să comunice și să studieze prin această limbă — nu doar să o vorbească.</p>
+              <p className="font-serif text-xs text-graphite/75 leading-relaxed">Materiile sunt predate în engleză, astfel că elevii învață natural să gândească, să comunice și să studieze în această limbă — nu doar să o vorbească.</p>
             </div>
 
             {/* Pillar 4 */}
