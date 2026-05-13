@@ -110,7 +110,7 @@ export default function ProgramStages() {
                 </svg>
               </div>
               <h4 className="font-display text-sm text-ink-deep leading-snug">De la Grădiniță până la Clasa a XII-a</h4>
-              <p className="font-serif text-xs text-graphite/75 leading-relaxed">Copiii învață în limba engleză pe tot parcursul școlarității, dobândind acces la o moștenire vastă de cunoaștere și pregătindu-se pentru o lume internațională.</p>
+              <p className="font-serif text-xs text-graphite/75 leading-relaxed">Copiii studiază în limba engleză pe întreaga durată a formării lor academice, având acces direct la o bogată moștenire culturală și intelectuală și fiind pregătiți să se miște cu încredere într-o lume globală.</p>
             </div>
 
             {/* Pillar 2 */}
