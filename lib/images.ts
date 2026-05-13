@@ -44,6 +44,7 @@ export const IMG = {
   classroomEdictum2: "/classroom2.jpg",
   clujPanorama: "/cluj-panorama.jpg",
   cicluPrimarMare: "/ciclu-primar-mare.jpg",
+  liceu: "/liceu.jpg",
 };
 
 export const IMG_ALT = {
